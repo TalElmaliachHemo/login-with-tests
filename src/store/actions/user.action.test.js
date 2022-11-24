@@ -8,8 +8,8 @@ jest.mock('../../services/user.service');
 describe('user actions', () => {
     let mockStore, store
 
-    const authUser = { username: 'puki', password: '123456' }
-    const mockUser = { username: 'puki', email: 'puki@smhuki.com', id: '101' }
+    const authUser = { username: 'roni', password: '123456' }
+    const mockUser = { username: 'limor', email: 'limor@gmail.com', id: 'i101' }
 
     beforeEach(() => {
         const middlewares = [thunk];

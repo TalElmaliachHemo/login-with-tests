@@ -47,7 +47,8 @@ describe('user service', () => {
     expect(res1).toBe(mockUser2)
 
     const res2 = await userService.login(mockCred2.username, mockCred2.password)
-    expect(httpService.post).toHaveBeenCalledTimes(1) // here we check that the user loaded from cache and not from http request
+    // here I check that the user loaded from cache and not from http request
+    expect(httpService.post).toHaveBeenCalledTimes(1)
     expect(res2).toBe(mockUser2)
   })
 })
