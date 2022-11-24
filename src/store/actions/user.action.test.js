@@ -1,12 +1,11 @@
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
+import { userService } from '../../services/user.service';
+import { doLogin } from './user.action.js'
 
-import { userService } from '../../services/user-service'
-import { doLogin } from './user.action'
+jest.mock('../../services/user.service');
 
-jest.mock('../services/user-service');
-
-describe('UserActions', () => {
+describe('user actions', () => {
     let mockStore, store
 
     const authUser = { username: 'puki', password: '123456' }

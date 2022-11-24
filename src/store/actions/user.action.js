@@ -1,4 +1,4 @@
-import {userService} from '../../services/user-service';
+import { userService } from '../../services/user.service';
 
 // Creators
 const _setUser = (user) => ({ type: 'SET_USER', user });

@@ -10,11 +10,15 @@ export const Login = () => {
         password: ''
     })
 
-    const onSubmitForm = (ev) => {
+    const onSubmitForm = async (ev) => {
         ev.preventDefault()
-        console.log('user', user)
-        dispatch(doLogin(user))
-        setUser({ username: '', password: '' })
+        try {
+            console.log('user', user)
+            await dispatch(doLogin(user))
+            setUser({ username: '', password: '' })
+        } catch(err) {
+            console.error(err);
+        }
     }
 
     // const errors = this.props.errors || {}

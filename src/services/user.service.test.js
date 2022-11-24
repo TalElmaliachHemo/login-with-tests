@@ -1,7 +1,7 @@
-import {httpService} from './http-service'
-import {userService} from './user-service'
+import {httpService} from './http.service'
+import {userService} from './user.service'
 
-jest.mock('./http-service');
+jest.mock('./http.service');
 
 const mockUser = {
   "_id": "611bd791c",
@@ -11,7 +11,7 @@ const mockUser = {
 
 const mockCred = {username: mockUser.username, password: "sk"}
 
-describe('UserService', () => {
+describe('user service', () => {
 
   beforeEach(() => {
     httpService.post.mockReset()

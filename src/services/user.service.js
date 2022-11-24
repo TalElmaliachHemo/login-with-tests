@@ -1,5 +1,5 @@
 // @ts-check
-import {httpService} from './http-service'
+import {httpService} from './http.service.js'
 
 const userCache = {};
 
@@ -11,6 +11,7 @@ export const userService = {
 * @param  {string} username
 * @param  {string} password
 */
+
 async function login (username, password) {
     if (userCache[username]) {
         console.log('No need to fetch, retrieving from Cache');    
