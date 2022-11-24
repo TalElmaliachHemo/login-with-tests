@@ -1,0 +1,34 @@
+:root {
+    // COLORS
+
+    //bg
+    --primary-bg: rgb(250, 250, 250);
+    --secondary-bg: white;
+
+    //color
+    --primary-color: rgb(38, 38, 38);
+    --secondary-color: rgb(142, 142, 142);
+
+    //border
+    --border-color: rgb(219, 219, 219);
+
+    //button
+    --primary-button: rgb(0, 149, 246);
+    --secondary-button: rgb(179, 223, 252);
+
+    // FONTS
+    --primary-font: roboto;
+    --secondary-font: pacifico;
+}
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 530px;
+$break-normal: 760px;
+$break-wide: 1000px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;
