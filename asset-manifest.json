@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/login-with-tests/static/css/main.68f9e9a6.css",
+    "main.js": "/login-with-tests/static/js/main.aa5a50c9.js",
+    "static/media/Pacifico-Regular.ttf": "/login-with-tests/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/Roboto-Regular.ttf": "/login-with-tests/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "index.html": "/login-with-tests/index.html",
+    "main.68f9e9a6.css.map": "/login-with-tests/static/css/main.68f9e9a6.css.map",
+    "main.aa5a50c9.js.map": "/login-with-tests/static/js/main.aa5a50c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68f9e9a6.css",
+    "static/js/main.aa5a50c9.js"
+  ]
+}
