@@ -1,8 +1,8 @@
 
 # Login With Tests
-An authentication Tests project whose goal was to learn and experiment with tests.
+An authentication Tests project whose goal was to learn and experiment with tests. [Take a look, it's on Github pages](https://talelmaliachhemo.github.io/login-with-tests/#/)
 
-![Login image](src/assets/readme-imgs/login-img.JPG)
+<img src="src/assets/readme-imgs/login-img.JPG" width="50%" style="float: left"/><img src="src/assets/readme-imgs/user-img.JPG" width="50%" style="float: left"/>
 
 ## About the tests
 So to create my small reference for tests, I chosed to implement it on a page that simulates a website login page. 
