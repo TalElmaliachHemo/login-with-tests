@@ -14,11 +14,10 @@ export const Login = () => {
     const onSubmitForm = async (ev) => {
         ev.preventDefault()
         try {
-            console.log('user', user)
             await dispatch(doLogin(user))
             setUser({ username: '', password: '' })
         } catch (err) {
-            console.error(err);
+            console.error("Error:", err);
         }
     }
 
@@ -26,8 +25,8 @@ export const Login = () => {
         <section className='login'>
             <h1 className='title'>Login</h1>
             <form className='form' onSubmit={onSubmitForm}>
-                <input className='username-input' autoFocus required {...register('username', 'text')} placeholder="Username" />
-                <input className='password-input' required {...register('password', 'password')} placeholder="Password" />
+                <input className='username-input' autoFocus required {...register('username', 'text')} placeholder="Enter username" />
+                <input className='password-input' required {...register('password', 'password')} placeholder="Enter password" />
                 <button className="btn-login" disabled={isDisabled} onClick={onSubmitForm}>Login</button>
             </form>
         </section>
