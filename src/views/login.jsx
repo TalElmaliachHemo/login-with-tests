@@ -1,10 +1,12 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { useFormRegister } from '../hooks/useFormRegister'
 import { doLogin } from '../store/actions/user.action'
 
 export const Login = () => {
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const [register, setUser, user] = useFormRegister({
         username: '',
         password: ''
