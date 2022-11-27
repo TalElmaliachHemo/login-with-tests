@@ -9,6 +9,7 @@ export const Login = () => {
         username: '',
         password: ''
     })
+    const isDisabled = (user.username && user.password) ? false : true
 
     const onSubmitForm = async (ev) => {
         ev.preventDefault()
@@ -16,22 +17,18 @@ export const Login = () => {
             console.log('user', user)
             await dispatch(doLogin(user))
             setUser({ username: '', password: '' })
-        } catch(err) {
+        } catch (err) {
             console.error(err);
         }
     }
-
-    // const errors = this.props.errors || {}
-    // const isSubmitAllowed = userCred.username !== '' && userCred.password !== ''
-    // const btnClasses = `btn btn-submit ${!isSubmitAllowed ? 'is-block' : ''}`
 
     return (
         <section className='login'>
             <h1 className='title'>Login</h1>
             <form className='form' onSubmit={onSubmitForm}>
-                <input className='username-input' {...register('username', 'text')} placeholder="Username" />
-                <input className='password-input' {...register('password', 'password')} placeholder="Password" />
-                <button className='btn-login' onClick={onSubmitForm}>Login</button>
+                <input className='username-input' autoFocus required {...register('username', 'text')} placeholder="Username" />
+                <input className='password-input' required {...register('password', 'password')} placeholder="Password" />
+                <button className="btn-login" disabled={isDisabled} onClick={onSubmitForm}>Login</button>
             </form>
         </section>
     )
