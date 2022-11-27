@@ -7,11 +7,6 @@ export const userService = {
     login,
 }
 
-/**
-* @param  {string} username
-* @param  {string} password
-*/
-
 async function login (username, password) {
     if (userCache[username]) {
         console.log('No need to fetch, retrieving from Cache');    

@@ -16,8 +16,9 @@ export const Login = () => {
     const onSubmitForm = async (ev) => {
         ev.preventDefault()
         try {
-            await dispatch(doLogin(user))
+            const loggedinUser = await dispatch(doLogin(user))
             setUser({ username: '', password: '' })
+            if (loggedinUser) navigate('/user')
         } catch (err) {
             console.error("Error:", err);
         }

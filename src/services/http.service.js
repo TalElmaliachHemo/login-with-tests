@@ -1,19 +1,10 @@
 import users from '../db/users.json'
 
-/**
- * @param  {String} route
- * @param  {Object=} config
- */
-function get(route, config) {
+function get() {
     return Promise.resolve(JSON.parse(JSON.stringify(users)))
 }
 
-/**
- * @param  {String} route
- * @param  {Object} data
- * @param  {Object=} config
- */
-function post (route, data, config) {
+function post (route, data) {
     const user = users.find(user => user.username === data.username)
     if (!user) {
         const errors = {

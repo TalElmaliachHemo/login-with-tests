@@ -9,6 +9,7 @@ export function doLogin({username, password}) {
         try {
             const loggedInUser = await userService.login(username, password);
             dispatch(_setUser(loggedInUser));
+            return loggedInUser
         } catch (err) {
             dispatch(_setError())
         }
