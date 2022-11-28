@@ -1,0 +1,11 @@
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        font-size: rem(25px);
+        font-family: var(--primary-font);
+        margin-block-end: rem(25px);
+    }
+}
