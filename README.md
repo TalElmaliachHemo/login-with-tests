@@ -2,7 +2,7 @@
 # Login With Tests
 An authentication Tests project whose goal was to learn and experiment with tests. [Take a look, it's on Github pages](https://talelmaliachhemo.github.io/login-with-tests/#/)
 
-![Login Page](src/assets/readme-imgs/login-img.JPG)![User Page](src/assets/readme-imgs/user-img.JPG)
+<img src="src/assets/readme-imgs/login-img.JPG" height="400px" style="float: left"/>&nbsp;&nbsp;&nbsp;<img src="src/assets/readme-imgs/user-img.JPG" height="400px" style="float: left"/>
 
 
 ## About the tests
