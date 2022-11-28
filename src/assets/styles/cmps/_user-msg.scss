@@ -1,0 +1,21 @@
+.user-msg {
+    display: none;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    padding: rem(25px);
+    border-radius: rem(5px);
+    background-color: var(--error-bg);
+
+    &.open {
+        display: flex;
+    }
+
+    .btn-close {
+        @include btn;
+        position: absolute;
+        top: rem(2px);
+        right: rem(2px);
+        font-size: rem(13px);
+    }
+}

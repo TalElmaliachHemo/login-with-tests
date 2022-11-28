@@ -1,6 +1,6 @@
 const initialState = {
     user: null,
-    error: null
+    errorMsg: null
 }
 
 export function userReducer(state = initialState, action = {}) {
@@ -13,7 +13,7 @@ export function userReducer(state = initialState, action = {}) {
         case 'SET_ERROR':
             return {
                 ...state,
-                error: action.error
+                errorMsg: action.error
             }
         default:
             return state;
