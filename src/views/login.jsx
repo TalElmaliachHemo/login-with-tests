@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { UserMsg } from '../cmps/user-msg'
 import { useFormRegister } from '../hooks/useFormRegister'
 import { doLogin } from '../store/actions/user.action'
 
@@ -30,6 +31,7 @@ export const Login = () => {
             <form className='form' onSubmit={onSubmitForm}>
                 <input className='username-input' autoFocus required {...register('username', 'text')} placeholder="Enter username" />
                 <input className='password-input' required {...register('password', 'password')} placeholder="Enter password" />
+                <UserMsg />
                 <button className="btn-login" disabled={isDisabled} onClick={onSubmitForm}>Login</button>
             </form>
         </section>

@@ -25,7 +25,7 @@ export const UserMsg = () => {
     return (
         <section className={`user-msg ${msgClass}`}>
             <button className="btn-close" onClick={onCloseUserMsg}>X</button>
-            <span>{errorMsg}</span>
+            <span className="msg">{errorMsg}</span>
         </section>
     )
 }
