@@ -11,7 +11,7 @@ export function doLogin({username, password}) {
             dispatch(_setUser(loggedInUser));
             return loggedInUser
         } catch (err) {
-            dispatch(_setError("Could not logged in"))
+            dispatch(_setError("The username or password is incorrect, please try again."))
         }
     }
 }

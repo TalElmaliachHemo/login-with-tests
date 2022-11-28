@@ -1,23 +1,15 @@
 .user-msg {
     display: none;
-    padding: rem(10px);
+    justify-content: center;
+    margin: rem(8px) rem(40px);
     color: var(--error-color);
 
     &.open {
         display: flex;
-        justify-content: center;
     }
 
     .msg {
         font-size: rem(14px);
         font-family: var(--primary-font-bold);
-    }
-
-    .btn-close {
-        @include btn;
-        position: absolute;
-        top: rem(2px);
-        right: rem(2px);
-        font-size: rem(13px);
     }
 }

@@ -12,19 +12,20 @@ export const UserMsg = () => {
         toggleMsgClass()
     }, [errorMsg])
 
-    const onCloseUserMsg = () => {
-        dispatch(resetErrorMsg())
-        setMsgClass('')
-    }
-
     const toggleMsgClass = () => {
         if (!errorMsg) setMsgClass('')
-        else setMsgClass('open')
+        else {
+            setMsgClass('open')
+            setTimeout(onResetErrorMsg, 3000)
+        }
+    }
+
+    const onResetErrorMsg = () => {
+        dispatch(resetErrorMsg())
     }
 
     return (
         <section className={`user-msg ${msgClass}`}>
-            <button className="btn-close" onClick={onCloseUserMsg}>X</button>
             <span className="msg">{errorMsg}</span>
         </section>
     )
