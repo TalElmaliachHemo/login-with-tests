@@ -4,6 +4,7 @@ An authentication Tests project whose goal was to learn and experiment with test
 
 ![Login Page](src/assets/readme-imgs/login-img.JPG)
 
+
 ## About the tests
 So to create my small reference for tests, I chosed to implement it on a page that simulates a website login page. 
 I built tests for the login page, user service, user action and user reducer files.
