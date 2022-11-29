@@ -1,12 +1,10 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import { resetErrorMsg } from "../store/actions/user.action"
+import { useSelector } from "react-redux"
 
 export const UserMsg = () => {
     const errorMsg = useSelector(state => state.userModule.errorMsg)
     const [msgClass, setMsgClass] = useState('')
-    const dispatch = useDispatch()
 
     useEffect(() => {
         toggleMsgClass()
@@ -14,14 +12,7 @@ export const UserMsg = () => {
 
     const toggleMsgClass = () => {
         if (!errorMsg) setMsgClass('')
-        else {
-            setMsgClass('open')
-            setTimeout(onResetErrorMsg, 3000)
-        }
-    }
-
-    const onResetErrorMsg = () => {
-        dispatch(resetErrorMsg())
+        else setMsgClass('open')
     }
 
     return (
